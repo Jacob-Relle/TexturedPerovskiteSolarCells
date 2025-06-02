@@ -1,0 +1,99 @@
+Layout2D {
+  UnitOfLength = 1e-7
+  MeshOptions {
+    MaximumSideLength = 0.5
+    MinimumMeshAngle = 20
+  }
+  BoundaryConditions {
+    Boundary {
+      Class = Periodic
+      Direction = Horizontal
+    }
+    Boundary {
+      Class = Transparent
+      ExteriorDomainId = 2
+      Direction = Vertical
+    }
+  }
+  Objects {    
+    Polygon {
+      Name = "Air"
+      Points = %(points_cd)e
+      DomainId = 1
+      Priority = ComputationalDomain
+    }
+    
+    Parallelogram {
+      Name = "glass_no_k"
+      DomainId = 2
+      Height = 1
+      Width = %(width)e
+      Priority = 5
+      Port= Point4
+      Alignment {
+        Orientation = Parallel
+        Parent {
+          Domain = "Air"
+          Port = 4
+        }
+      }
+    }
+
+    Polygon {
+      Name = "glass"
+      DomainId = 3
+      Points = %(glass_points)e
+      Priority = 4
+    } 
+
+    Polygon {
+      Name = "ITO"
+      DomainId = 4
+      Points = %(ITO_points)e
+      Priority = 3
+    }
+    
+    Polygon {
+      Name = "PTAA"
+      DomainId = 5
+      Points = %(PTAA_points)e
+      Priority = 2
+    }
+
+    Polygon {
+      Name = "PVK"
+      DomainId = 6
+      Points = %(PVK_points)e
+      Priority = 1
+    }
+
+    Parallelogram {
+      Name = "C60"
+      DomainId = 7
+      Height = 0.3
+      Width = %(width)e
+      Port = Point4
+    Alignment {
+        Parent {
+          Domain = "PVK"
+          Port = 1
+        }
+        Orientation = Parallel
+      }
+    }
+    Parallelogram {
+      Name = "Cu"
+      DomainId = 8
+      Height = 1
+      Width = %(width)e
+      Port = Point4
+      Alignment {
+        Parent {
+          Domain = "C60"
+          Port = Point1
+        }
+        Orientation = Parallel
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+Project {
+  InfoLevel = 3
+  StorageFormat = Binary
+  Electromagnetics {
+    TimeHarmonic {
+      Scattering {
+        Accuracy {
+
+          FiniteElementDegree = 3
+          Precision = 1e-5
+        }
+      }
+    }
+  }
+}
+
+
+# Export the generated Grid
+#PostProcess {
+#  ExportGrid {
+#    OutputFileName = "./project_results/Single_Junction_Pero_grid.jcm"
+#    InputFileName = "./project_results/fieldbag.jcm"
+#    Format = JCM-ASCII
+#  }
+#}
+
+
+# Total Reflection
+PostProcess {
+  FourierTransform {
+    OutputFileName = "./project_results/reflection.jcm"
+    FieldBagPath = "./project_results/fieldbag.jcm"
+    NormalDirection = Y
+  }
+
+}
+
+# Parasitic Absorption
+PostProcess {
+    DensityIntegration {
+    DomainIds = [3,4,5,7,8]
+    FieldBagPath = "./project_results/fieldbag.jcm"
+    OutputQuantity = ElectromagneticFieldAbsorption
+    OutputFileName = "./project_results/integrated_parasitic_absorption.jcm"
+  }
+}
+
+# Integrated Absorption
+PostProcess {
+  DensityIntegration {
+    DomainIds = 6
+    FieldBagPath = "./project_results/fieldbag.jcm"
+    OutputQuantity = ElectromagneticFieldAbsorption
+    OutputFileName = "./project_results/integrated_absorption.jcm"
+  }
+}
+
+# Absorption Density
+PostProcess {
+  ExportFields {
+    OutputFileName = "./project_results/electric_field_absorption_density.vtr"
+    FieldBagPath = "./project_results/fieldbag.jcm"
+    OutputQuantity = ElectromagneticFieldAbsorptionDensity
+    DomainIds = [4,5,6,7,8]
+    Format = VTK
+    Cartesian {
+      NGridPointsX = 300
+      NGridPointsY = 1000
+    }
+  } 
+}
+
+# Flux Density
+PostProcess {
+  ExportFields {
+    OutputFileName = "./project_results/electric_field_energy_flux_density.vtr"
+    FieldBagPath = "./project_results/fieldbag.jcm"
+    OutputQuantity = ElectromagneticFieldEnergyFluxDensity
+    Format = VTK
+    Cartesian {
+     NGridPointsX = 300
+     NGridPointsY = 1000
+      }
+  }
+}

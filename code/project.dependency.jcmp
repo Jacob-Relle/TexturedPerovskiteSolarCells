@@ -1,0 +1,78 @@
+Dependency {
+  PostProcessSection {
+    Tag = "821728e44344643ef3f72a5b55edd44c"
+    InputFile {
+      FileName = "boundary_conditions.jcm"
+      Tag = "99c36968388851ddb357a4cfe8c5b1a3"
+      Type = JCMTree
+    }
+    InputFile {
+      FileName = "layout.jcm"
+      Tag = "9e149768ccc82b11fa89719080da788d"
+      Type = JCMTree
+    }
+    InputFile {
+      FileName = "materials.jcm"
+      Tag = "c178283c86e9cf3a922fc242af948b9a"
+      Type = JCMTree
+    }
+    InputFile {
+      FileName = "sources.jcm"
+      Tag = "3d8293390a35da4b01c986cffddaf568"
+      Type = JCMTree
+    }
+    OutputFile {
+      FileName = "project_results\Single_Junction_Pero_grid.jcm"
+      Tag = "73290307cca95c55c5d717d30a73a5a3"
+      Type = JCMTree
+    }
+    OutputFile {
+      FileName = "project_results\electric_field_absorption_density.jcm"
+      Tag = "1ab35d98598f61374744341991830d7f"
+      Type = JCMTree
+    }
+    OutputFile {
+      FileName = "project_results\ft_oben.jcm"
+      Tag = ""
+      Type = JCMTree
+    }
+  }
+  SolveSection {
+    Tag = "0096346d944ac8ae939206979c1f8886"
+    InputFile {
+      FileName = "boundary_conditions.jcm"
+      Tag = "99c36968388851ddb357a4cfe8c5b1a3"
+      Type = JCMTree
+    }
+    InputFile {
+      FileName = "layout.jcm"
+      Tag = "9e149768ccc82b11fa89719080da788d"
+      Type = JCMTree
+    }
+    InputFile {
+      FileName = "materials.jcm"
+      Tag = "c178283c86e9cf3a922fc242af948b9a"
+      Type = JCMTree
+    }
+    InputFile {
+      FileName = "sources.jcm"
+      Tag = "3d8293390a35da4b01c986cffddaf568"
+      Type = JCMTree
+    }
+    OutputFile {
+      FileName = "project_results\computational_costs.jcm"
+      Tag = "3afc95f86bcffe6d7473dac632d8e33f"
+      Type = JCMBlob
+    }
+    OutputFile {
+      FileName = "project_results\eigenvalues.jcm"
+      Tag = ""
+      Type = JCMBlob
+    }
+    OutputFile {
+      FileName = "project_results\fieldbag.jcm"
+      Tag = "23ba24adb596724f1d6aa0f418618653"
+      Type = JCMBlob
+    }
+  }
+}

@@ -1,0 +1,67 @@
+
+#Air
+Material {
+  DomainId = 1
+  Name = "Air"
+  RelPermeability = 1.0
+  RelPermittivity = 1.0
+}
+
+#glass_no_k
+Material {
+  DomainId = 2
+  Name = "glass_no_k"
+  RelPermeability = 1.0
+  RelPermittivity = %(permi_glass_no_k)e
+}
+
+#glass
+Material {
+  Name = "glass"
+  DomainId = 3
+  RelPermeability = 1.0
+  RelPermittivity = %(permi_glass)e
+}
+
+#ITO_1
+Material {
+  Name ="ITO"
+  DomainId = 4
+  RelPermeability = 1.0
+  RelPermittivity = %(permi_ito)e
+}
+
+#PTAA
+Material{
+  Name = "PTAA"
+  DomainId = 5
+  RelPermeability = 1.0
+  RelPermittivity = %(permi_PTAA)e
+}
+
+#WB_PVK
+Material {
+  Name = "PVK"
+  DomainId = 6
+  RelPermeability = 1.0
+  RelPermittivity = %(permi_PVK)e
+}
+
+#C60
+Material {
+  Name="C60"
+  DomainId = 7
+  RelPermeability = 1.0
+  RelPermittivity = %(permi_C60)e
+}
+
+#Cu
+Material {
+  Name = "Cu"
+  DomainId = 8
+  RelPermeability = 1.0
+  RelPermittivity = %(permi_Cu)e
+}
+
+
+
