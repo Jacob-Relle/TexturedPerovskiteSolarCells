@@ -1,0 +1,19 @@
+The used nk tabels were obtained from various sources.
+This document contains the references to all of them in the same 
+order as used in the Simulation stack.
+
+
+Glass_no_k and Glass: Delivered with GenPro4
+
+Santbergen, T. Meguro, T. Suezaki, G. Koizumi, K. Yamamoto and M. Zeman, "GenPro4 Optical Model for Solar Cell Simulation and Its Application to Multijunction Solar Cells," in IEEE Journal of Photovoltaics, vol. 7, no. 3, pp. 919-926, May 2017, doi: 10.1109/JPHOTOV.2017.2669640. keywords: {Photovoltaic cells;Mathematical model;Optical scattering;Optics;Computational modeling;Optical diffraction;Geometrical optics;modeling;thin film PV device properties and modeling}
+
+
+ITO:  L. Mazzarella, M. Werth, K. Jäger, M. Jošt, L. Korte, S. Albrecht, R. Schlatmann, and B. Stannowski, “Infrared photocurrent management in monolithic perovskite/silicon heterojunction tandem solar cells by using a nanocrystalline silicon oxide interlayer,” Opt. Express 26(10), A487–A497 (2018).
+
+PTAA: Delivered with GenPro4
+
+PVK: J. A. Guerra, A. Tejada, L. Korte, L. Kegelmann, J. A. Töfflinger, S. Albrecht, B. Rech and R. Weingärtner, J. Appl. Phys. 121, 173104 (2017)
+
+C_60:
+
+Cu: Optical Constants of Noble Metals, Physical Review B, Volume 6, Number 12, 1972, pp. 4370-4379
