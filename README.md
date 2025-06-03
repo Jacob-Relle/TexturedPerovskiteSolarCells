@@ -15,10 +15,10 @@ A trial licence can be requested here: "https://installation.jcmwave.com/fb13885
 The repository is organised into the following main folders:
 
 - **`code/`**
-  Contains a juypiter nootebook with the code needed run the simulations and all relevant .jcm files. All neccessary paths should be defined at the top.
+  Contains a juypiter nootebook with the code needed to run the simulations and all relevant .jcm files. All neccessary paths should be defined at the top.
    
 - **`results/`**
- Contains the exported quantaties for the four textures.
+ Contains the exported quantities for the four textures mainly analyzed in the manuscript.
 
 - **`spec-file/`**
   This file contains a list of all neccessary python packages and can be used to create a fitting conda enviornment.
