@@ -1,6 +1,6 @@
 # TexturedPerovskiteSolarCells -- Numerical examples to analyse the optical behaviour of textured perovskite solar cells
 
-**TexturedPerovskiteSolarCells** contains all scripts and referencees to the data needed to reproduce the numerical results and figures from the manuscript:
+**TexturedPerovskiteSolarCells** contains all scripts and referencees to the data needed to reproduce the optical results and figures from the manuscript:
 > *Unravelling the mystery of enhanced open-circuit voltages in nanotextured perovskite solar cells*
 > 
 > Dilara Abdel, Jacob Relle, Thomas Kirchartz, Patrick Jaap, Jürgen Fuhrmann, Sven Burger, Christiane Becker, Klaus Jäger, and Patricio Farrell.
