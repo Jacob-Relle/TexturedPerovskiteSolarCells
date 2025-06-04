@@ -23,8 +23,8 @@ The repository is organised into the following main folders:
 - **`spec-file/`**
   This file contains a list of all neccessary python packages and can be used to create a fitting conda enviornment.
 
-- **`spec-file/`**
-  This file contains a list to the needed nk-datasets used from other publications.
+- **`nkdata/`**
+  This file contains a list to the needed nk-datasets and the nrel spectrum used from other publications.
 
 ## Usage
 
