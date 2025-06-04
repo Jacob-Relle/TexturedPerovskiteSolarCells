@@ -1,7 +1,8 @@
 The used nk tabels were obtained from various sources.
 This document contains the references to all of them in the same 
-order as used in the Simulation stack.
+order as used in the simulation stack. 
 
+For the Irradiation pls also download the ASTM G-173-03 tables as a spreedsheet from https://www.nrel.gov/grid/solar-resource/spectra-am1.5.
 
 Glass_no_k and Glass: Delivered with GenPro4
 
@@ -17,3 +18,5 @@ PVK: J. A. Guerra, A. Tejada, L. Korte, L. Kegelmann, J. A. Töfflinger, S. Albr
 C_60:
 
 Cu: Optical Constants of Noble Metals, Physical Review B, Volume 6, Number 12, 1972, pp. 4370-4379
+
+
