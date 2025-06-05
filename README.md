@@ -20,6 +20,9 @@ The repository is organised into the following main folders:
 - **`results/`**
  Contains the exported quantities for the four textures mainly analyzed in the manuscript.
 
+- **`data/`**
+  Use this directory to store the nk-data and the AM1.5G spectrum file
+
 - **`spec-file/`**
   This file contains a list of all neccessary python packages and can be used to create a fitting conda enviornment.
 
@@ -34,13 +37,19 @@ git clone https://github.com/Jacob-Relle/TexturedPerovskiteSolarCells.git
 cd TexturedPerovskiteSolarCells
 ```
 
-2. **Create the needed conda enviornment**
+2. **Download the external data**
+Open the file nkdata and:
+  -Download the nk-datasets 
+  -Download the AM1.5G spectral data
+add all files to the *data* directory
+
+3. **Create the needed conda enviornment**
 ```
-conda create --name myenv --file spec-file.txt
-conda activate myenv
+conda create --name OptSim --file spec-file.txt
+conda activate OptSim
 ```
 
-3. **Run simulations**
+4. **Run simulations**
 Open the Juypiter notebook Main.ipynb
 Set your local paths in the third cell for:
  -Your jcm installation: jcm_root 
