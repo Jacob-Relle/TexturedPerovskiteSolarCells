@@ -44,8 +44,14 @@ Open the file nkdata and:   <br />
 add all files to the *data* directory
 
 3. **Create the needed conda enviornment**
+For linux:
 ```
-conda create --name OptSim --file spec-file.txt
+conda create --name OptSim --file enviornment.yml
+conda activate OptSim
+```
+For Windows:
+```
+conda create --name OptSim --file enviornment_win.yml
 conda activate OptSim
 ```
 
