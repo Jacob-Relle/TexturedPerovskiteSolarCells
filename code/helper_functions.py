@@ -3,6 +3,7 @@ import numpy as np
 import sys, os
 import pandas as pd
 from decimal import Decimal
+from pathlib import Path
 
 
 
@@ -10,7 +11,8 @@ def get_spectrum(density: Literal['full','thin','single'] , wavelength = 500):
     assert density in ['full', 'thin', 'single']
 
     # Generate the AM1.5 Sunspectrum
-    spectral_data = pd.read_excel('AM1.5.xls')
+    working_dir = Path.cwd().parent
+    spectral_data = pd.read_excel(f'{working_dir}/data/AM1.5.xls')
     if density == 'full':
         spectrum = np.around(np.array(spectral_data.iloc[41:1042,0].tolist()) * 1e-9,15)
         irradiance = np.array(spectral_data.iloc[41:1042,2].tolist())
@@ -59,3 +61,21 @@ def koch_curve(order):
         
         new_curve.append(prev_curve[-1])
         return np.array(new_curve)
+
+def fresnel_s(n_1, n_2, theta=0):
+
+    x = n_2*np.sqrt(1 - (n_1/n_2 * np.sin(theta))**2)
+    num =  n_1*np.cos(theta) - x
+    denum =  n_1*np.cos(theta) + x
+    R_s = np.abs( num / denum )**2
+
+    return R_s 
+
+def fresnel_p(n_1, n_2, theta=0):
+
+    x = n_1*np.sqrt(1 - (n_1/n_2 * np.sin(theta))**2)
+    num = x - n_2*np.cos(theta)
+    denum = x + n_2*np.cos(theta)
+    R_p = np.abs( num / denum )**2
+
+    return R_p

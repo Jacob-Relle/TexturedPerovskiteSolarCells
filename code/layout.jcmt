@@ -1,7 +1,7 @@
 Layout2D {
   UnitOfLength = 1e-7
   MeshOptions {
-    MaximumSideLength = 0.5
+    MaximumSideLength = %(side_length)e
     MinimumMeshAngle = 20
   }
   BoundaryConditions {

@@ -6,8 +6,8 @@ Project {
       Scattering {
         Accuracy {
 
-          FiniteElementDegree = 3
-          Precision = 1e-5
+          FiniteElementDegree = %(fem_degree)d
+          Precision = %(precision)e
         }
       }
     }
