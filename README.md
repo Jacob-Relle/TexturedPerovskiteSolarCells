@@ -43,7 +43,7 @@ Open the file nkdata and:   <br />
   -Download the AM1.5G spectral data <br />
 add all files to the *data* directory
 
-3. **Create the needed conda enviornment**
+3. **Create the needed conda enviornment** <br />
 For linux:
 ```
 conda create --name OptSim --file enviornment.yml
