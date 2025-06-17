@@ -23,11 +23,11 @@ The repository is organised into the following main folders:
 - **`data/`**
   Use this directory to store the nk-data and the AM1.5G spectrum file
 
-- **`enviornment.yml/`**
+- **`enviornment.yml`**
   This file contains a list of all neccessary python packages and can be used to create a fitting conda enviornment.
   The file *enviornment_win.yml* can be used by windowws users.
 
-- **`nkdata/`**
+- **`nkdata.txt`**
   This file contains a list to the needed nk-datasets and the nrel spectrum used from other publications.
 
 ## Usage
