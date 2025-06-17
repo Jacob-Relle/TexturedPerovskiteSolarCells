@@ -37,7 +37,7 @@ git clone https://github.com/Jacob-Relle/TexturedPerovskiteSolarCells.git
 cd TexturedPerovskiteSolarCells
 ```
 
-2. **Download the external data**
+2. **Download the external data** <br />
 Open the file nkdata and:   <br />
   -Download the nk-datasets <br />
   -Download the AM1.5G spectral data <br />
@@ -55,7 +55,7 @@ conda create --name OptSim --file enviornment_win.yml
 conda activate OptSim
 ```
 
-4. **Run simulations**
+4. **Run simulations** <br />
 Open the Juypiter notebook Main.ipynb <br />
 Set your local paths in the third cell for: <br />
  -Your jcm installation: jcm_root <br />
